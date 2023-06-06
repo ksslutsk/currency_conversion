@@ -1,0 +1,27 @@
+@import 'src/app/utils/mixines.scss';
+
+.header {
+
+    &__container {
+        @include flex(row, space-between);
+
+        padding: .5rem 1rem;
+        
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.17);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.17);
+        box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.17);
+    }
+
+    &__actual {
+
+        &-block {
+            @include flex(row, space-between, center);
+        }
+
+        &-rate {
+            margin-left: 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+}

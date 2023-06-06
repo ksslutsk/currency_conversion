@@ -1,0 +1,8 @@
+@import 'src/app/utils/mixines.scss';
+
+.calculation {
+    &__container {
+        @include flex(row, space-around, center);
+        height: 500px;
+    }
+}

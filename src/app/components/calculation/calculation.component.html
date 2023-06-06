@@ -1,0 +1,23 @@
+<div class="calculation__container">
+
+    <div class="calculation__currency-group">
+        <input #leftInput type="number" (input)="onLeftInput(+leftInput.value)" [(ngModel)]="operands.left.value">
+        <select #leftSelect (change)="onChangeSelection(false, leftSelect.value)">
+            <option default>---</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+        </select>
+    </div>
+
+    <div class="calculation__currency-group">
+        <input #rightInput type="number" (input)="onRightInput(+rightInput.value)" [(ngModel)]="operands.right.value">
+        <select #rightSelect (change)="onChangeSelection(true, rightSelect.value)">
+            <option default>---</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+        </select>
+    </div>
+    
+</div>

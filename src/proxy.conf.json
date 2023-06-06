@@ -1,0 +1,7 @@
+{
+  "/NBU_Exchange/exchange_site": {
+    "target": "https://bank.gov.ua",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
